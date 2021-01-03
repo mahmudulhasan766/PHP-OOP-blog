@@ -13,7 +13,7 @@ if(isset($_POST['login'])){
 //echo $login_error;
 ?>
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -30,7 +30,7 @@ if(isset($_POST['login'])){
     <hr/>  
 </body>
 
-</html> -->
+</html>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -68,8 +68,7 @@ if(isset($_POST['login'])){
                                           
                                             <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
                                                 <a class="small" href="password.html">Forgot Password?</a>
-                                                
-                                            <input class="btn btn-primary" type="submit" value="Save User" name="login"/>
+                                                <input class="btn btn-primary" type="submit" value="Save User" name="login"/>
                                                 
                                             </div>
                                         </form>
