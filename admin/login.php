@@ -10,8 +10,27 @@ $login = new Login();
 if(isset($_POST['login'])){
     $login->loginCheck($_POST);
 }
-echo $login_error;
+//echo $login_error;
 ?>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>detaBase</title>
+<h1>Hello DataBase</h1>
+</head>
+<body>
+    <form action="" method="post">
+        <input type="text" name="username" placeholder="Email"/><br/><br/>
+        <input type="password" name="password" placeholder="Password"/><br/><br/>
+        <input type="submit" value="Save User" name="login"/>
+
+    </form>
+    <hr/>  
+</body>
+
+</html> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,17 +56,21 @@ echo $login_error;
                                     <div class="card-body">
                                         <form clas="form-signin" action="" method="POST">
                                             <div class="form-group">
-                                                <label class="small mb-1" for="inputEmailAddress">User Name</label>
-                                                <input class="form-control py-4" name="username" id="inputEmailAddress" type="email" placeholder="Enter email address" />
+                                                <label class="small mb-1" for="inputEmailAddress">User Name</label><br/>
+                                                <input class="form-control py-4" id="inputEmailAddress" type="text" name="username" placeholder="Enter email address" />
+                                               
                                             </div>
                                             <div class="form-group">
-                                                <label class="small mb-1" for="inputPassword">Password</label>
-                                                <input class="form-control py-4" name="password" id="inputPassword" type="password" placeholder="Enter password" />
+                                                <label class="small mb-1" for="inputPassword">Password</label><br/>
+                                                <input class="form-control py-4" id="inputPassword" type="password" name="password" placeholder="Enter password" />
+                                            
                                             </div>
                                           
                                             <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
-                                            
-                                                <a class="btn btn-primary" name="login" href="login.php">Login</a>
+                                                <a class="small" href="password.html">Forgot Password?</a>
+                                                
+                                            <input class="btn btn-primary" type="submit" value="Save User" name="login"/>
+                                                
                                             </div>
                                         </form>
                                     </div>

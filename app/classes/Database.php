@@ -5,6 +5,8 @@ use mysqli;
 
 class Database{
     public function dbCon(){
+
+        echo "BAtabase";
         $host ="localhost";
         $user ="root";
         $pass ="";
